@@ -1,9 +1,10 @@
 import { Github, Linkedin, Mail} from "lucide-react";
-import Image from 'next/image'
+import Link from "next/link";
 
 export default function FirstSection() {
+    // noinspection XmlDeprecatedElement
     return (
-        <div className=" flex-col justify-center items-center inline-flex gap-8 w-screen h-screen">
+        <div id={'home'} className=" flex-col justify-center items-center inline-flex gap-8 w-screen h-screen">
             <div className=" text-5xl font-extrabold ">Ivan Lee
             </div>
             <div
@@ -12,15 +13,19 @@ export default function FirstSection() {
             </div>
             <div
                 className=" text-sm font-medium ">Pic:
-                Southern Cross by Ivan Lee
+                Southern Cross by me!
             </div>
             <div className="justify-start items-start inline-flex gap-8">
-                <Github size={24} className='text-zinc-50'/>
-                <Linkedin size={24} className='text-zinc-50'/>
-                <Mail size={24} className='text-zinc-50'/>
+                <Link href={'https://github.com/ivanleekk'}>
+                    <Github size={24} className='text-zinc-50'/>
+                </Link>
+                <Link href={'https://www.linkedin.com/in/ivanleekaikiat/'}>
+                    <Linkedin size={24} className='text-zinc-50'/>
+                </Link>
+                <Link href={'mailto:ivanleekaikiat@gmail.com'}>
+                    <Mail size={24} className='text-zinc-50'/>
+                </Link>
             </div>
-            {/*<Image src={'/astro-bg.webp'} alt={'background image'} fill={true} className={'bg-blend-normal opacity-50 bg-no-repeat'}/>*/}
-
         </div>
     )
 }
