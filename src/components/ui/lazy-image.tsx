@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const LazyImage = ({ src, ...props }) => {
+const LazyImage = ({ src, ...props }:{src:string}) => {
     const [isReady, setIsReady] = useState(false);
 
     const onLoadCallback = () => {
