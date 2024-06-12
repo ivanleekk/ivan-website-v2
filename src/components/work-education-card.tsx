@@ -24,20 +24,18 @@ type WorkCardProps = {
  */
 export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, startDate, endDate}:WorkCardProps) {
     return (
-        <Card>
+        <Card className={'w-64'}>
             <CardHeader>
                 <CardTitle>
                     {companyOrDegree}
                 </CardTitle>
-            </CardHeader>
-            <CardContent>
-                <CardDescription>
+                <CardDescription className={'text-lg'}>
                     {jobTitleOrSchool}
                 </CardDescription>
-            </CardContent>
-            <CardFooter>
+            </CardHeader>
+            <CardContent>
                 <p>{startDate} - {endDate}</p>
-            </CardFooter>
+            </CardContent>
         </Card>
     );
 }
