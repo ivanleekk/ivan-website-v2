@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 
-const LazyImage = ({ src, ...props }:{src:string}) => {
+const LazyImage = ({ src, ...props }:{src:string | StaticImageData}) => {
     const [isReady, setIsReady] = useState(false);
 
     const onLoadCallback = () => {
