@@ -1,14 +1,15 @@
 import { Github, Linkedin, Mail} from "lucide-react";
 import Link from "next/link";
 
-export default function FirstSection() {
+export default function HeroSection() {
     // noinspection XmlDeprecatedElement
     return (
-        <div id={'home'} className=" flex-col justify-center items-center inline-flex gap-8 w-screen h-screen">
-            <div className=" text-5xl font-extrabold ">Ivan Lee
+        <div id={'home'} className=" flex-col justify-center items-center text-center flex gap-8 w-screen h-screen">
+            <div className="text-5xl font-extrabold ">
+                Ivan Lee
             </div>
             <div
-                className=" text-3xl font-semibold ">Data
+                className="text-3xl font-semibold ">Data
                 Analyst | Software Engineer
             </div>
             <div
