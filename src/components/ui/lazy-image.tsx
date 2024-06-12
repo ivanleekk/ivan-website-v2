@@ -11,7 +11,6 @@ const LazyImage = ({ src, ...props }) => {
 
     return (
         <Image
-            objectFit='cover'
             src={src}
             {...props}
             onLoad={onLoadCallback}

@@ -8,7 +8,7 @@ export default function Page() {
     return (
         <div>
             <Background/>
-            <Header/>
+            {/*<Header/>*/}
             <HeroSection/>
             <IntroSection/>
             <ResumeSection/>
