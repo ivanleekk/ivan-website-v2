@@ -3,11 +3,13 @@ import intro_profile from "/public/intro-profile.webp";
 
 export default function IntroSection() {
     return (
-        <div id={'about'} className={'flex flex-row justify-between max-w-5xl mx-auto h-screen items-center'}>
-            <div className={'h-[50vh] inline-flex gap-16'}>
-                <div className={'relative w-1/2'}>
-                    <Image src={intro_profile} alt={'profile pic'} fill={true} className={'object-cover rounded-md'}/>
-                </div>
+        <div id={'about'} className={'static'}>
+            <div className={'flex gap-16'}>
+                    <div className={'absolute h-1/3 w-1/3'}>
+                        <Image src={intro_profile} alt={'profile pic'} fill={true}
+                               className={'object-cover rounded-md'} placeholder={'blur'}/>
+                    </div>
+
                 <div className={'w-1/2'}>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <div className={'text-5xl font-bold mb-12'}>Hey it's me, Ivan</div>

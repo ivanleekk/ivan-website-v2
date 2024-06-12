@@ -1,13 +1,17 @@
 import Header from "@/components/header";
-import FirstSection from "@/app/first-section";
+import HeroSection from "@/app/hero-section";
 import IntroSection from "@/app/intro-section";
+import ResumeSection from "@/app/resume-section";
+import Background from "@/components/background";
 
 export default function Page() {
-  return (
-      <div className={" background bg-[url('/astro-bg.webp')] bg-cover w-screen h-screen"}>
-          <Header/>
-          <FirstSection/>
-          <IntroSection/>
-      </div>
-  );
+    return (
+        <div>
+            <Background/>
+            <Header/>
+            <HeroSection/>
+            <IntroSection/>
+            <ResumeSection/>
+        </div>
+    );
 }
