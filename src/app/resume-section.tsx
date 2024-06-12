@@ -5,8 +5,8 @@ export default function ResumeSection() {
         <div className={'flex flex-col items-center pb-[25vh] bg-zinc-800'}>
             <div>
                 <hr className={'my-10 border-0'}/>
-                <div className={'text-5xl font-semibold text-center'}>Work Experience</div>
-                <div className={'flex content-start items-start justify-center flex-wrap gap-8 p-10'}>
+                <div className={'text-5xl font-semibold text-center underline'}>Work Experience</div>
+                <div className={'max-w-5xl flex content-start justify-center flex-wrap gap-8 p-10 items-stretch'}>
                     <WorkEducationCard companyOrDegree={'KPMG'} jobTitleOrSchool={'Forensic Data Analyst Intern'}
                                        startDate={'May 2024'} endDate={'Current'}/>
                     <WorkEducationCard companyOrDegree={'Invigilo AI'} jobTitleOrSchool={'Software Engineer Intern'}
@@ -21,8 +21,8 @@ export default function ResumeSection() {
             </div>
             <hr className={'my-8'}/>
             <div>
-                <div className={'text-5xl font-semibold text-center'}>Education</div>
-                <div className={'flex content-start items-start justify-center flex-wrap gap-8 pt-10'}>
+                <div className={'text-5xl font-semibold text-center underline'}>Education</div>
+                <div className={'max-w-5xl flex content-start justify-center flex-wrap gap-8 pt-10 items-stretch'}>
                     <WorkEducationCard companyOrDegree={'Computer Science'} jobTitleOrSchool={'National University of Singapore (NUS)'}
                                        startDate={'Aug 2022'} endDate={'Current'}/>
                     <WorkEducationCard companyOrDegree={'Business Administration'} jobTitleOrSchool={'National University of Singapore (NUS)'}

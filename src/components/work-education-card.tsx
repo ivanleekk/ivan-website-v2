@@ -24,7 +24,7 @@ type WorkCardProps = {
  */
 export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, startDate, endDate}:WorkCardProps) {
     return (
-        <Card className={'w-64'}>
+        <Card className={'flex flex-col w-64 self-stretch justify-between'}>
             <CardHeader>
                 <CardTitle>
                     {companyOrDegree}
@@ -33,9 +33,9 @@ export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, st
                     {jobTitleOrSchool}
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardFooter>
                 <p>{startDate} - {endDate}</p>
-            </CardContent>
+            </CardFooter>
         </Card>
     );
 }
