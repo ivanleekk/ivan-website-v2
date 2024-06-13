@@ -20,6 +20,7 @@ type CarouselCardProps = {
  * @param src
  * @param alt
  * @param href
+ * @param caption
  */
 
 export default function CarouselCard({title, description, src, alt, href, caption}: CarouselCardProps) {
