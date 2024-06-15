@@ -1,4 +1,9 @@
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselDots,
+    CarouselItem,
+} from "@/components/ui/carousel";
 import CarouselCard from "@/components/carousel-card";
 import mountCook from '../../public/mount-cook.webp'
 import seals from '../../public/seals.webp'
@@ -15,7 +20,7 @@ export default function PhotosSection() {
                 align: 'start',
                 loop: true,
             }}
-                      className="w-full max-w-5xl items-stretch p-10">
+                      className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard src={mountCook} alt={'Mount Cook, New Zealand'} caption={true}
@@ -37,8 +42,7 @@ export default function PhotosSection() {
                         />
                     </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious className={'flex my-auto'} variant={'secondary'}/>
-                <CarouselNext className={'flex my-auto'} variant={'secondary'}/>
+                <CarouselDots/>
             </Carousel>
         </div>
     )

@@ -1,4 +1,9 @@
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselDots,
+    CarouselItem,
+} from "@/components/ui/carousel";
 import CarouselCard from "@/components/carousel-card";
 import seedlink from '../../public/seedlink.png'
 import beatit from '../../public/beatit.png'
@@ -15,7 +20,7 @@ export default function ProjectsSection() {
                 align: 'start',
                 loop: true,
             }}
-                      className="w-full max-w-5xl items-stretch p-10">
+                      className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard title={'Seedlink'} description={'hacksingapore24 submission'}
@@ -38,8 +43,7 @@ export default function ProjectsSection() {
                                       href={'https://github.com/ivanleekk/spacecraft-pose-estimation-runtime'}/>
                     </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious variant={'secondary'}/>
-                <CarouselNext variant={'secondary'}/>
+                <CarouselDots/>
             </Carousel>
         </div>
     )
