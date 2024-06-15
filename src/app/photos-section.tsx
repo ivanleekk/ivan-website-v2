@@ -1,3 +1,4 @@
+'use client'
 import {
     Carousel,
     CarouselContent,
@@ -9,6 +10,7 @@ import mountCook from '../../public/mount-cook.webp'
 import seals from '../../public/seals.webp'
 import yaowarat from '../../public/yaowarat.webp'
 import sungeiBuloh from '../../public/sungei-buloh.webp'
+import Autoplay from "embla-carousel-autoplay"
 
 export default function PhotosSection() {
     return (
@@ -19,8 +21,11 @@ export default function PhotosSection() {
             <Carousel opts={{
                 align: 'start',
                 loop: true,
-            }}
-                      className="w-full max-w-5xl items-stretch pt-10">
+            }} plugins={[
+                Autoplay({
+                    delay: 3000,
+                }),
+            ]} className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard src={mountCook} alt={'Mount Cook, New Zealand'} caption={true}
