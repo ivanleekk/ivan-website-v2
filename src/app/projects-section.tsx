@@ -1,9 +1,16 @@
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+'use client'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselDots,
+    CarouselItem,
+} from "@/components/ui/carousel";
 import CarouselCard from "@/components/carousel-card";
 import seedlink from '../../public/seedlink.png'
 import beatit from '../../public/beatit.png'
 import dataAnalysis from '../../public/data-analysis.webp'
 import spacecraft from '../../public/spacecraft.png'
+import Autoplay from "embla-carousel-autoplay";
 
 export default function ProjectsSection() {
     return (
@@ -14,8 +21,11 @@ export default function ProjectsSection() {
             <Carousel opts={{
                 align: 'start',
                 loop: true,
-            }}
-                      className="w-full max-w-5xl items-stretch p-10">
+            }} plugins={[
+                Autoplay({
+                    delay: 3000,
+                }),
+            ]} className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard title={'Seedlink'} description={'hacksingapore24 submission'}
@@ -38,8 +48,7 @@ export default function ProjectsSection() {
                                       href={'https://github.com/ivanleekk/spacecraft-pose-estimation-runtime'}/>
                     </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious variant={'secondary'}/>
-                <CarouselNext variant={'secondary'}/>
+                <CarouselDots/>
             </Carousel>
         </div>
     )
