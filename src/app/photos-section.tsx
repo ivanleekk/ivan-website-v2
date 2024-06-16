@@ -14,7 +14,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 export default function PhotosSection() {
     return (
-        <div className={'content-center flex flex-col items-center pb-[25vh] bg-zinc-800 py-10 px-16 '}>
+        <div className={'content-center flex flex-col items-center pb-[25vh] bg-zinc-800 py-10 px-16 min-h-screen justify-center'}>
             <hr className={'my-10 border-0'}/>
             <div className={'text-5xl font-semibold text-center underline'}>Photos</div>
 

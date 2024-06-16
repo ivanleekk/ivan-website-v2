@@ -2,7 +2,7 @@ import WorkEducationCard from "@/components/work-education-card";
 
 export default function ResumeSection() {
     return (
-        <div className={'flex flex-col items-center pb-[25vh] bg-zinc-800'}>
+        <div className={'flex flex-col items-center pb-[25vh] bg-zinc-800 min-h-screen justify-center py-10'}>
             <div>
                 <hr className={'my-10 border-0'}/>
                 <div className={'text-5xl font-semibold text-center underline'}>Work Experience</div>
