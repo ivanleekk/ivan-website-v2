@@ -23,7 +23,7 @@ type WorkCardProps = {
  */
 export default function ContactCard({email, linkedin}: WorkCardProps) {
     return (
-        <Card className={'flex flex-col self-stretch justify-between'}>
+        <Card className={'flex flex-col self-stretch justify-between max-w-[90vw]'}>
             <CardHeader>
                 <CardTitle>
                     Contact Me!
@@ -32,12 +32,12 @@ export default function ContactCard({email, linkedin}: WorkCardProps) {
             </CardHeader>
             {email && <CardContent>
                 <div className={'flex-row flex justify-between gap-4'}>
-                    <div className={'flex-col flex'}>
+                    <div className={'flex-col flex min-w-0'}>
                         <CardDescription className={'text-lg'}>
                             Email
                         </CardDescription>
 
-                        <p>{email}</p>
+                        <p className={'text-ellipsis overflow-hidden ...'}>{email}</p>
                     </div>
                     <Button className={'my-auto'} onClick={() => {
                         navigator.clipboard.writeText(email)
@@ -49,12 +49,12 @@ export default function ContactCard({email, linkedin}: WorkCardProps) {
             </CardContent>}
             {linkedin && <CardContent>
                 <div className={'flex-row flex justify-between gap-4'}>
-                    <div className={'flex-col flex'}>
+                    <div className={'flex-col flex min-w-0 '}>
                         <CardDescription className={'text-lg'}>
                             LinkedIn
                         </CardDescription>
 
-                        <p>{linkedin}</p>
+                        <p className={'text-ellipsis overflow-hidden ...'}>{linkedin}</p>
                     </div>
                     <Button className={'my-auto'} onClick={() => {
                         navigator.clipboard.writeText(linkedin)
