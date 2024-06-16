@@ -1,6 +1,5 @@
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
@@ -9,10 +8,11 @@ import {
 
 
 type WorkCardProps = {
-    companyOrDegree: string;
-    jobTitleOrSchool: string;
-    startDate: string;
-    endDate: string;
+    companyOrDegree?: string;
+    jobTitleOrSchool?: string;
+    startDate?: string;
+    endDate?: string;
+    description?: string;
 };
 
 
@@ -21,8 +21,9 @@ type WorkCardProps = {
  * @param jobTitleOrSchool
  * @param startDate
  * @param endDate
+ * @param description
  */
-export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, startDate, endDate}:WorkCardProps) {
+export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, startDate, endDate, description}:WorkCardProps) {
     return (
         <Card className={'flex flex-col w-64 self-stretch justify-between'}>
             <CardHeader>
@@ -34,7 +35,8 @@ export default function WorkEducationCard({companyOrDegree, jobTitleOrSchool, st
                 </CardDescription>
             </CardHeader>
             <CardFooter>
-                <p>{startDate} - {endDate}</p>
+                {startDate && endDate && <p>{startDate} - {endDate}</p>}
+                {description && <p>{description}</p>}
             </CardFooter>
         </Card>
     );
