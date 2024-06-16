@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 import {Copy} from "lucide-react";
 import {Button} from "@/components/ui/button";
+import { toast } from "sonner"
 
 
 type WorkCardProps = {
@@ -38,7 +39,10 @@ export default function ContactCard({email, linkedin}: WorkCardProps) {
 
                         <p>{email}</p>
                     </div>
-                    <Button className={'my-auto'} onClick={() => navigator.clipboard.writeText(email)}>
+                    <Button className={'my-auto'} onClick={() => {
+                        navigator.clipboard.writeText(email)
+                        toast('Copied to clipboard!')
+                    }}>
                         <Copy/>
                     </Button>
                 </div>
@@ -52,7 +56,10 @@ export default function ContactCard({email, linkedin}: WorkCardProps) {
 
                         <p>{linkedin}</p>
                     </div>
-                    <Button className={'my-auto'} onClick={() => navigator.clipboard.writeText(linkedin)}>
+                    <Button className={'my-auto'} onClick={() => {
+                        navigator.clipboard.writeText(linkedin)
+                        toast('Copied to clipboard!')
+                    }}>
                         <Copy/>
                     </Button>
                 </div>
