@@ -6,6 +6,7 @@ import Background from "@/components/background";
 import ProjectsSection from "@/app/projects-section";
 import PhotosSection from "@/app/photos-section";
 import ActivitiesSection from "@/app/activities-section";
+import ContactSection from "@/app/contact-section";
 
 export default function Page() {
     return (
@@ -18,6 +19,7 @@ export default function Page() {
             <ProjectsSection/>
             <PhotosSection/>
             <ActivitiesSection/>
+            <ContactSection/>
         </div>
     );
 }

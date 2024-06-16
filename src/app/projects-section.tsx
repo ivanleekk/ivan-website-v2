@@ -14,7 +14,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 export default function ProjectsSection() {
     return (
-        <div className={'content-center flex flex-col items-center pb-[25vh]  py-10 px-16 '}>
+        <div className={'content-center flex flex-col items-center pb-[25vh]  py-10 px-16 justify-center min-h-screen'}>
             <hr className={'my-10 border-0'}/>
             <div className={'text-5xl font-semibold text-center underline'}>Projects</div>
 

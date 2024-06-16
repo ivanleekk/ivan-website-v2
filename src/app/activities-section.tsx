@@ -2,7 +2,7 @@ import WorkEducationCard from "@/components/work-education-card";
 
 export default function ActivitiesSection() {
     return (
-        <div className={'flex flex-col items-center pb-[25vh] '}>
+        <div className={'flex flex-col items-center pb-[25vh] py-10 min-h-screen justify-center'}>
             <div>
                 <hr className={'my-10 border-0'}/>
                 <div className={'text-5xl font-semibold text-center underline'}>Activities</div>
