@@ -18,7 +18,7 @@ export default function ActivitiesSection() {
             <hr className={'my-8'}/>
             <div>
                 <div className={'text-5xl font-semibold text-center underline'}>Competitions</div>
-                <div className={'max-w-5xl flex content-start justify-center flex-wrap gap-8 pt-10 items-stretch'}>
+                <div className={'max-w-5xl flex content-start justify-center flex-wrap gap-8 p-10 items-stretch'}>
                     <WorkEducationCard companyOrDegree={'NES GroundZero 2024'}
                                        jobTitleOrSchool={'Finalist (Top 3 in category)'}
                                        description={'Start-up Pitching Competition'}/>
