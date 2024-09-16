@@ -28,6 +28,9 @@ export default function ActivitiesSection() {
                     <WorkEducationCard companyOrDegree={"L'Oreal Brandstorm 2023"}
                                        jobTitleOrSchool={'Participation'}
                                        description={'International Innovation Challenge to reinvent their products'}/>
+                    <WorkEducationCard companyOrDegree={"GIC #CodeToImpact 2024"}
+                                       jobTitleOrSchool={'Participation'}
+                                       description={'24 hour hackathon to create a full stack trading and risk management application'}/>
                 </div>
             </div>
         </div>

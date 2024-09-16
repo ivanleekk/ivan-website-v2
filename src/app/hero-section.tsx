@@ -9,8 +9,8 @@ export default function HeroSection() {
                 Ivan Lee
             </div>
             <div
-                className="text-3xl font-semibold ">Data
-                Analyst | Software Engineer
+                className="text-3xl font-semibold ">Software Engineer | Data
+                Analyst
             </div>
             <div
                 className=" text-sm font-medium ">Pic:
