@@ -5,7 +5,7 @@ export default function IntroSection() {
     return (
         <div id={'about'} className={'place-items-center min-h-screen'}>
             <div className={'flex landscape:flex-row portrait:flex-col portrait:gap-8 portrait:mx-auto '}>
-                <div className={'relative landscape:w-[33vw] portrait:w-screen portrait:h-[33vh]'}>
+                <div className={'relative landscape:w-[33vw] h-[100vh] portrait:w-screen portrait:h-[33vh]'}>
                     <LazyImage src={intro_profile} alt={'profile pic'} fill={true}
                                className={'object-cover'} placeholder={'blur'}/>
                 </div>
