@@ -8,7 +8,7 @@ export default function ResumeSection() {
                 <div className={'text-5xl font-semibold text-center underline'}>Work Experience</div>
                 <div className={'max-w-5xl flex content-start justify-center flex-wrap gap-8 p-10 items-stretch'}>
                     <WorkEducationCard companyOrDegree={'KPMG'} jobTitleOrSchool={'Forensic Data Analyst Intern'}
-                                       startDate={'May 2024'} endDate={'Current'}/>
+                                       startDate={'May 2024'} endDate={'Aug 2024'}/>
                     <WorkEducationCard companyOrDegree={'Invigilo AI'} jobTitleOrSchool={'Software Engineer Intern'}
                                        startDate={'May 2023'} endDate={'Aug 2023'}/>
                     <WorkEducationCard companyOrDegree={'PSA Corporation'} jobTitleOrSchool={'Engineering Intern'}
