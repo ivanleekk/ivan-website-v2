@@ -10,6 +10,8 @@ import mountCook from '../../public/mount-cook.webp'
 import seals from '../../public/seals.webp'
 import yaowarat from '../../public/yaowarat.webp'
 import sungeiBuloh from '../../public/sungei-buloh.webp'
+import crab from '../../public/crab.jpeg'
+import peacock from '../../public/peacock.jpeg'
 import Autoplay from "embla-carousel-autoplay"
 
 export default function PhotosSection() {
@@ -27,6 +29,16 @@ export default function PhotosSection() {
                 }),
             ]} className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
+                    <CarouselItem
+                        className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
+                        <CarouselCard src={crab} alt={'Phuket, Thailand'} caption={true}
+                        />
+                    </CarouselItem>
+                    <CarouselItem
+                        className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
+                        <CarouselCard src={peacock} alt={'Sentosa, Singapore'} caption={true}
+                        />
+                    </CarouselItem>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard src={mountCook} alt={'Mount Cook, New Zealand'} caption={true}
                         />
