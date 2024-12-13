@@ -10,6 +10,8 @@ import seedlink from '../../public/seedlink.png'
 import beatit from '../../public/beatit.png'
 import dataAnalysis from '../../public/data-analysis.webp'
 import spacecraft from '../../public/spacecraft.png'
+import cashshare from '../../public/cashshare.png'
+import finance from '../../public/finance.png'
 import Autoplay from "embla-carousel-autoplay";
 
 export default function ProjectsSection() {
@@ -27,6 +29,16 @@ export default function ProjectsSection() {
                 }),
             ]} className="w-full max-w-5xl items-stretch pt-10">
                 <CarouselContent className={'-ml-4 '}>
+                    <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
+                        <CarouselCard title={'Cashshare Telegram Bot'} description={'Easy bill splitting with friends!'}
+                                      src={cashshare} alt={'Spacecraft Pose Estimation Data Picture'}
+                                      href={'https://github.com/ivanleekk/cashshare-telegram'}/>
+                    </CarouselItem>
+                    <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
+                    <CarouselCard title={'Finance Tracker'} description={'Portfolio and Bank Account Tracker'}
+                                  src={finance} alt={'Spacecraft Pose Estimation Data Picture'}
+                                  href={'https://finance.ivanleekaikiat.com'}/>
+                    </CarouselItem>
                     <CarouselItem className={'landscape:basis-1/2 md:basis-1/2 lg:landscape:basis-1/3 pl-4 flex flex-grow'}>
                         <CarouselCard title={'Seedlink'} description={'hacksingapore24 submission'}
                                       src={seedlink} alt={'Seedlink Logo'}
