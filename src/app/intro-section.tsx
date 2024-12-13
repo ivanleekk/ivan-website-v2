@@ -20,19 +20,26 @@ export default function IntroSection() {
                         </div>
                         <div className={'text-sm font-bold text-zinc-400'}>ACADEMICS</div>
                         <div className={'text-lg font-semibold mb-8 text-pretty'}>I’m doing a double degree in Computer
-                            Science 🧑‍💻 and
-                            Business Administration 📈 at the National University of Singapore (NUS)
+                            Science (AI) 🧑‍💻 and
+                            Business Administration (Finance) 📈 at the National University of Singapore (NUS)
                         </div>
                         <div className={'text-sm font-bold text-zinc-400'}>INTERESTS</div>
                         <div className={'text-lg font-semibold mb-8 text-pretty'}>My current interests are in Artificial
                             Intelligence 🤖,
                             Data Analysis 📊, and Finance 🏦
+                            
+                        </div>
+                        <div className={'text-lg font-semibold mb-8 text-pretty'}>
+                            Building new tools and applications is my passion, and I love to learn new things! Looking
+                            at problems and finding solutions is what I do best. And is what inspired my two most recent
+                            projects, a <a href={"https://finance.ivanleekaikiat.com"}>Finance Tracker</a> to
+                            replace my excel sheet and a bill splitting telegram bot (@cashshare_bot on telegram).
                         </div>
                     </div>
-
+                
                 </div>
             </div>
-
+        
         </div>
     )
 }

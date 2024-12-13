@@ -28,7 +28,7 @@ export default function CarouselCard({title, description, src, alt, href, captio
     return (
         <div className={'w-full h-full'}>
             <Card
-                className={'bg-white rounded-md shadow flex-col flex self-stretch h-full w-full '}>
+                className={'rounded-md shadow flex-col flex self-stretch h-full w-full '}>
                 <CardHeader className={'pb-0 px-4 self-stretch'}>
                     {title && <CardTitle>{title}</CardTitle>}
                     {description && <CardDescription className={'text-lg'}>{description}</CardDescription>}
