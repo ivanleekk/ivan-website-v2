@@ -1,4 +1,4 @@
-import intro_profile from "/public/intro-profile.webp";
+import intro_profile from "../../public/intro-profile.webp";
 import LazyImage from "@/components/ui/lazy-image";
 
 export default function IntroSection() {
